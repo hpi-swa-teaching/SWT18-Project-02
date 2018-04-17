@@ -5,5 +5,5 @@ testReset
 		counter increment.
 		self assert: ea equals: counter currentValue ].
 	counter reset.
-	self assert: 1 equals: counter currentValue
+	self assert: 0 equals: counter currentValue
 	
