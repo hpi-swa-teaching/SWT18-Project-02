@@ -1,5 +1,5 @@
 OrderedDictionary {
-	'packages\/BaselineOfCounter.package' : #SquotCypressCodeSerializer,
-	'packages\/Counter-Core.package' : #SquotCypressCodeSerializer,
-	'packages\/Counter-Tests.package' : #SquotCypressCodeSerializer
+	'packages\/BaselineOfFontPickerTool.package' : #SquotCypressCodeSerializer,
+	'packages\/FontPickerTool-Core.package' : #SquotCypressCodeSerializer,
+	'packages\/FontPickerTool-Tests.package' : #SquotCypressCodeSerializer
 }

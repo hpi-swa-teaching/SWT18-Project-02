@@ -1,14 +1,14 @@
 {
-	"category" : "Counter-Core",
+	"category" : "BaselineOfFontPickerTool",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"currentValue" ],
-	"name" : "Counter",
+		 ],
+	"name" : "BaselineOfFontPickerTool",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "BaselineOf",
 	"type" : "normal" }
