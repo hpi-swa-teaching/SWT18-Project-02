@@ -2,8 +2,10 @@
 	"class" : {
 		"open" : "jw 5/5/2018 16:07" },
 	"instance" : {
-		"buildButtonBarWith:" : "jw 5/6/2018 13:05",
+		"buildButtonBarWith:" : "jw 5/6/2018 13:34",
 		"buildWith:" : "jw 5/6/2018 13:00",
+		"chooseEToysFont" : "jw 5/6/2018 13:30",
+		"chooseEToysTitleFont" : "jw 5/6/2018 13:30",
 		"chooseFixedFont" : "jw 5/6/2018 12:51",
 		"chooseFlapsFont" : "jw 5/6/2018 13:05",
 		"chooseListFont" : "jw 5/6/2018 13:05",

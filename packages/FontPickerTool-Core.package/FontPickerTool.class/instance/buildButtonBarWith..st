@@ -44,4 +44,22 @@ buildButtonBarWith: builder
 		yourself.
 	panelSpec children addLast: buttonSpec.
 	
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		label: 'eToys font...' translated;
+		help: 'Choose the font to be used on eToys environment' translated;
+		action: #chooseEToysFont;
+		yourself.
+	panelSpec children addLast: buttonSpec.
+	
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		label: 'eToys title font...' translated;
+		help: 'Choose the font to be used in titles on eToys environment' translated;
+		action: #chooseEToysTitleFont;
+		yourself.
+	panelSpec children addLast: buttonSpec.
+	
 	^panelSpec
