@@ -1,4 +1,4 @@
 as yet unclassified
 restoreDefaultFonts
 
-	Preferences restoreDefaultFonts
+	Preferences resetFonts 
