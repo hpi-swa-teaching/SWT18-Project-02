@@ -1,7 +1,7 @@
 as yet unclassified
 buildWith: builder
 
-	|windowSpec panelSpec|
+	|windowSpec panelSpec buttonSpec|
 	windowSpec := builder pluggableWindowSpec new.
 	windowSpec
 		model: self;
@@ -11,5 +11,15 @@ buildWith: builder
 		
 	panelSpec := self buildButtonBarWith: builder.			
 	windowSpec children add: panelSpec.
+	
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		frame: (0.5@0 corner: 1@1);
+		label: 'RESET BUTTON' translated;
+		help: 'Use the standard system font defaults' translated;
+		action: #restoreDefaultFonts;
+		yourself.
+	windowSpec children addLast: buttonSpec.
 		
 	^ builder build: windowSpec
