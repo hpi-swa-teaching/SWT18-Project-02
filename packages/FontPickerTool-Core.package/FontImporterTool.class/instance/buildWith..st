@@ -7,7 +7,6 @@ buildWith: builder
 	windowSpec := self buildWindowWith: builder specs: {
 		(self fontListFrame) -> [self buildFontListWith: builder].
 		(self previewFrame) -> [self buildPreviewPaneWith: builder].
-		(self webFontFrame) -> [self buildWebFontPaneWith: builder].
 		(self buttonsFrame) -> [self buildButtonBarWith: builder].
 	}.
 	^ builder build: windowSpec

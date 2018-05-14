@@ -6,8 +6,8 @@ resetFonts
 	defaultFont1 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 9 emphasized: 0.
 	defaultFont2 := StrikeFont familyName: 'Bitstream Vera Sans Mono' pointSize: 12.
 	defaultFont3 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 7.
-	defaultFont4 := StrikeFont familyName: 'Bitmap DejaVu' pointSize: 9.
-	defaultFont5 := StrikeFont familyName: 'Bitmap DejaVu' pointSize: 7.
+	defaultFont4 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 9.
+	defaultFont5 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 7.
 	 
 	Preferences 
 		setSystemFontTo: defaultFont1;
