@@ -5,4 +5,4 @@ searchWebFont
 	
 	response := WebClient httpGet: 'https://fonts.googleapis.com/css?family=Inconsolata&text=Hello%20World'.
 	body := response content.
-	"self webFontResultsText setText: body."
+	"self webFontResultsText setText: body. lol"
