@@ -1,7 +1,7 @@
 as yet unclassified
 buildWith: builder
 
-	|windowSpec panelSpec buttonSpec fontListSpec|
+	|windowSpec panelSpec buttonSpec fontListSpec checkBoxSpec|
 	windowSpec := builder pluggableWindowSpec new.
 	windowSpec
 		model: self;
@@ -9,14 +9,10 @@ buildWith: builder
 		extent: 500@500;
 		children: OrderedCollection new.
 	
-	fontListSpec := builder pluggableListSpec new.
-	fontListSpec
-		model: self;
-		frame: (0@0 corner: 0.5@0.5);
-		name: #fontList;
-		list: #fontList.
-		"getIndex: #selectedFontIndex; 
-		setIndex: #selectedFontIndex:"
+	checkBoxSpec := self buildCheckBoxSpecWith: builder.
+	windowSpec children add: checkBoxSpec.
+	
+	fontListSpec := self buildFontListWith: builder.
 	windowSpec children add: fontListSpec.
 		
 	panelSpec := self buildButtonBarWith: builder.			
