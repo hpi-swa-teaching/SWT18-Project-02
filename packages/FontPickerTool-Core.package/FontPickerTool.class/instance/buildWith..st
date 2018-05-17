@@ -1,13 +1,23 @@
 as yet unclassified
 buildWith: builder
 
-	|windowSpec panelSpec buttonSpec|
+	|windowSpec panelSpec buttonSpec fontListSpec|
 	windowSpec := builder pluggableWindowSpec new.
 	windowSpec
 		model: self;
 		label: 'Font Picker Tool';
 		extent: 500@500;
 		children: OrderedCollection new.
+	
+	fontListSpec := builder pluggableListSpec new.
+	fontListSpec
+		model: self;
+		frame: (0@0 corner: 0.5@0.5);
+		name: #fontList;
+		list: #fontList.
+		"getIndex: #selectedFontIndex; 
+		setIndex: #selectedFontIndex:"
+	windowSpec children add: fontListSpec.
 		
 	panelSpec := self buildButtonBarWith: builder.			
 	windowSpec children add: panelSpec.

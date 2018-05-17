@@ -5,7 +5,7 @@ buildButtonBarWith: builder
 	panelSpec := builder pluggablePanelSpec new.
 	panelSpec
 		layout: #vertical;
-		frame: (0@0 corner: 0.5@1);
+		frame: (0@0.5 corner: 0.5@1);
 		children: OrderedCollection new.
 			
 	buttonSpec := builder pluggableButtonSpec new.
