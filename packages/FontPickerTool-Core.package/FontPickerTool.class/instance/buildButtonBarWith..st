@@ -20,9 +20,9 @@ buildButtonBarWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
-		label: 'Done' translated;
+		label: 'close' translated;
 		help: 'Close the tool' translated;
-		action: #exit;
+		action: #close;
 		yourself.
 	panelSpec children addLast: buttonSpec.
 	

@@ -1,7 +1,7 @@
 as yet unclassified
 buildWith: builder
 
-	|windowSpec panelSpec buttonSpec fontListSpec checkBoxSpec styleListSpec sizeListSpec|
+	|windowSpec panelSpec fontListSpec checkBoxSpec styleListSpec sizeListSpec previewPanelSpec|
 	windowSpec := builder pluggableWindowSpec new.
 	windowSpec
 		model: self;
@@ -18,15 +18,6 @@ buildWith: builder
 	panelSpec := self buildButtonBarWith: builder.			
 	windowSpec children add: panelSpec.
 	
-	"buttonSpec := builder pluggableButtonSpec new.
-	buttonSpec
-		model: self;
-		frame: (0.5@0.75 corner: 1@1);
-		label: 'RESET BUTTON' translated;
-		help: 'Use the standard system font defaults' translated;
-		action: #resetFonts;
-		yourself.
-	windowSpec children addLast: buttonSpec."
 	
 	styleListSpec := self buildStyleListWith: builder.
 	styleListSpec
@@ -37,5 +28,11 @@ buildWith: builder
 	sizeListSpec
 		frame: (0.75@0.25 corner: 1@0.5).
 	windowSpec children add: sizeListSpec.
+	
+	previewPanelSpec := self buildPreviewPanelWith: builder.
+	previewPanelSpec
+		frame: (0@0.5 corner: 0.75@1).
+	windowSpec children add: previewPanelSpec.
+	
 		
 	^ builder build: windowSpec
