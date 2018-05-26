@@ -1,9 +1,9 @@
 accessing
-selectedFontIndex
+selectedFontTypeIndex
 	| font textStyleName family |
-	selectedFontIndex ifNotNil: [^selectedFontIndex].
-	selectedFontIndex := 0.
-	font := (getSelector isSymbol and:[target notNil])
+	selectedFontTypeIndex ifNotNil: [^selectedFontTypeIndex].
+	selectedFontTypeIndex := 1.
+	"font := (getSelector isSymbol and:[target notNil])
 		ifTrue:[target perform: getSelector]
 		ifFalse:[getSelector].
 	font ifNotNil:[
@@ -13,5 +13,5 @@ selectedFontIndex
 		family := self fontList detect:[:f | f = textStyleName] ifNone:[].
 	].
 	selectedFontIndex := self fontList indexOf: family.
-	self selectedFontIndex: selectedFontIndex.
-	^selectedFontIndex
+	self selectedFontIndex: selectedFontIndex."
+	^selectedFontTypeIndex

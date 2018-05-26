@@ -7,7 +7,12 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"fontList",
-		"selectedFontIndex" ],
+		"selectedFontIndex",
+		"selectedFontTypeIndex",
+		"emphasis",
+		"pointSize",
+		"target",
+		"getSelector" ],
 	"name" : "FontPickerTool",
 	"pools" : [
 		 ],
