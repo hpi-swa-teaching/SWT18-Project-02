@@ -1,4 +1,0 @@
-model access
-webFontResultsText
-
-	^ 'Results:'
