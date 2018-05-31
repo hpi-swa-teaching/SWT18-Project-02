@@ -3,7 +3,7 @@
 		"open" : "jw 5/5/2018 16:07" },
 	"instance" : {
 		"apply" : "ct 5/31/2018 11:45",
-		"buildButtonBarWith:" : "ct 5/31/2018 11:21",
+		"buildButtonBarWith:" : "ma 5/31/2018 12:00",
 		"buildCheckBoxSpecWith:" : "ct 5/31/2018 12:38",
 		"buildFontListWith:" : "jw 5/26/2018 12:11",
 		"buildPointSizeListWith:" : "jw 5/26/2018 11:37",

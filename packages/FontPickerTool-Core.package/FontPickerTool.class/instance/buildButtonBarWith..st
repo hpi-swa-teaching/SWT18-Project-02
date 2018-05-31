@@ -20,7 +20,7 @@ buildButtonBarWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
-		label: 'close' translated;
+		label: 'Close' translated;
 		help: 'Close the tool' translated;
 		action: #close;
 		yourself.
@@ -29,7 +29,7 @@ buildButtonBarWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
-		label: 'undo' translated;
+		label: 'Undo' translated;
 		help: 'Undo the last font choice' translated;
 		action: #undo;
 		yourself.
@@ -38,7 +38,7 @@ buildButtonBarWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
-		label: 'RESET' translated;
+		label: 'Reset' translated;
 		help: 'Go back to the default font settings' translated;
 		action: #resetFonts;
 		yourself.
