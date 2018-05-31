@@ -16,7 +16,15 @@ buildWith: builder
 		frame: (0@0.5 corner: 0.5@1);
 		label: 'This is the BUTTON FONT' translated;
 		help: 'This is the BALLOON HELP FONT' translated;
-		action: #openExample;
+		yourself.
+	windowSpec children add: buttonSpec.
+	
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		frame: (0.5@0.5 corner: 1@1);
+		label: 'Hover this field to see the\BALLOON HELP FONT' translated withCRs;
+		help: 'This is the BALLOON HELP FONT' translated;
 		yourself.
 	windowSpec children add: buttonSpec.
 	
