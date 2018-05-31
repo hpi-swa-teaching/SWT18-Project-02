@@ -29,6 +29,15 @@ buildButtonBarWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
+		label: 'undo' translated;
+		help: 'Undo the last font choice' translated;
+		action: #undo;
+		yourself.
+	panelSpec children addLast: buttonSpec.
+	
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
 		label: 'RESET' translated;
 		help: 'Go back to the default font settings' translated;
 		action: #resetFonts;

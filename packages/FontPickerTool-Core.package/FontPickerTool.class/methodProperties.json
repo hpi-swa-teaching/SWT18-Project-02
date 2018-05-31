@@ -2,8 +2,8 @@
 	"class" : {
 		"open" : "jw 5/5/2018 16:07" },
 	"instance" : {
-		"apply" : "jw 5/26/2018 16:10",
-		"buildButtonBarWith:" : "jw 5/26/2018 16:23",
+		"apply" : "ct 5/31/2018 11:45",
+		"buildButtonBarWith:" : "ct 5/31/2018 11:21",
 		"buildCheckBoxSpecWith:" : "jw 5/26/2018 15:57",
 		"buildFontListWith:" : "jw 5/26/2018 12:11",
 		"buildPointSizeListWith:" : "jw 5/26/2018 11:37",
@@ -26,6 +26,10 @@
 		"getSelector:" : "jw 5/26/2018 12:02",
 		"getStandardFontFromType:" : "jw 5/26/2018 14:43",
 		"initialize" : "jw 5/26/2018 12:03",
+		"lastFont" : "ct 5/31/2018 11:23",
+		"lastFont:" : "ct 5/31/2018 11:23",
+		"lastFontType" : "ct 5/31/2018 11:23",
+		"lastFontType:" : "ct 5/31/2018 11:23",
 		"pointSize" : "jw 5/26/2018 11:38",
 		"pointSize:" : "jw 5/26/2018 11:38",
 		"pointSizeList" : "jw 5/26/2018 11:38",
@@ -42,5 +46,7 @@
 		"selectedPointSizeIndex" : "jw 5/26/2018 15:49",
 		"selectedPointSizeIndex:" : "jw 5/26/2018 13:51",
 		"selectedTextStyle" : "jw 5/26/2018 11:42",
+		"setFontTypeWith:To:" : "ct 5/31/2018 11:38",
 		"target" : "jw 5/26/2018 12:01",
-		"target:" : "jw 5/26/2018 12:01" } }
+		"target:" : "jw 5/26/2018 12:01",
+		"undo" : "ct 5/31/2018 11:39" } }

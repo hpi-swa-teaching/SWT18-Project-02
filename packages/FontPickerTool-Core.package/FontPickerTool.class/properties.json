@@ -12,7 +12,9 @@
 		"emphasis",
 		"pointSize",
 		"target",
-		"getSelector" ],
+		"getSelector",
+		"lastFontType",
+		"lastFont" ],
 	"name" : "FontPickerTool",
 	"pools" : [
 		 ],
