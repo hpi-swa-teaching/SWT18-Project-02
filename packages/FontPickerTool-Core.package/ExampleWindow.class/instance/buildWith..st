@@ -23,7 +23,7 @@ buildWith: builder
 	buttonSpec
 		model: self;
 		frame: (0.5@0.5 corner: 1@1);
-		label: 'Hover this field to see the\BALLOON HELP FONT' translated withCRs;
+		label: 'Hover this field to see the', String cr, 'BALLOON HELP FONT' translated;
 		help: 'This is the BALLOON HELP FONT' translated;
 		yourself.
 	windowSpec children add: buttonSpec.
@@ -32,7 +32,7 @@ buildWith: builder
 	codeSpec
 		model: self;
 		frame: (0@0 corner: 1@0.5);
-		help: 'This is the DEFAULT TEXT FONT' translated;
+		help: 'This is the CODE FONT.', String cr, 'Note: Before the change is accepted, the window must be closed and reopened.', String cr, String cr, 'This is also the DEFAULT TEXT FONT.', String cr, 'Note: This font type changes the font in every white text box.' translated;
 		yourself.
 	windowSpec children add: codeSpec.
 	
