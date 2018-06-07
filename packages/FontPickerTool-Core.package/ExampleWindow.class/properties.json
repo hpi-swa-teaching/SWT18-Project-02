@@ -1,0 +1,14 @@
+{
+	"category" : "FontPickerTool-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ExampleWindow",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

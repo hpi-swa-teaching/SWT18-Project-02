@@ -1,0 +1,23 @@
+{
+	"category" : "FontPickerTool-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fontList",
+		"selectedFontIndex",
+		"selectedFontTypeIndex",
+		"emphasis",
+		"pointSize",
+		"target",
+		"getSelector",
+		"lastFontType",
+		"lastFont",
+		"exampleBuilder" ],
+	"name" : "FontPickerTool",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

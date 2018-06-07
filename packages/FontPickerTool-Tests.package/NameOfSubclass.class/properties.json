@@ -1,0 +1,14 @@
+{
+	"category" : "FontPickerTool-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fontPickerTool" ],
+	"name" : "NameOfSubclass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

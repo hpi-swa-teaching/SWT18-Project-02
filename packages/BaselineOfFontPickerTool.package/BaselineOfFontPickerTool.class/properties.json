@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfFontPickerTool",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfFontPickerTool",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

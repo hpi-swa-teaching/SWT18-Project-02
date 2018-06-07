@@ -1,2 +1,5 @@
-OrderedDictionary { }'packages\/FontPickerTool-Tests.package' : #SquotCypressCodeSerializer
+OrderedDictionary {
+	'packages\/BaselineOfFontPickerTool.package' : #SquotCypressCodeSerializer,
+	'packages\/FontPickerTool-Core.package' : #SquotCypressCodeSerializer,
+	'packages\/FontPickerTool-Tests.package' : #SquotCypressCodeSerializer
 }
