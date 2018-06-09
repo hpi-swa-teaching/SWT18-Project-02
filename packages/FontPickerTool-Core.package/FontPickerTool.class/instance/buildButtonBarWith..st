@@ -20,15 +20,6 @@ buildButtonBarWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
-		label: 'Close' translated;
-		help: 'Close the tool' translated;
-		action: #close;
-		yourself.
-	panelSpec children addLast: buttonSpec.
-	
-	buttonSpec := builder pluggableButtonSpec new.
-	buttonSpec
-		model: self;
 		label: 'Undo' translated;
 		help: 'Undo the last font choice' translated;
 		action: #undo;
@@ -42,6 +33,24 @@ buildButtonBarWith: builder
 		label: 'Reset' translated;
 		help: 'Go back to the default font settings' translated;
 		action: #resetFonts;
+		yourself.
+	panelSpec children addLast: buttonSpec.
+	
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		label: 'Demo mode' translated;
+		help: 'Change to demo mode (everything is bigger)' translated;
+		action: #activateDemoMode;
+		yourself.
+	panelSpec children addLast: buttonSpec.
+		
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		label: 'Close' translated;
+		help: 'Close the tool' translated;
+		action: #close;
 		yourself.
 	panelSpec children addLast: buttonSpec.
 	

@@ -2,8 +2,9 @@
 	"class" : {
 		"open" : "jw 5/5/2018 16:07" },
 	"instance" : {
+		"activateDemoMode" : "jw 6/9/2018 12:14",
 		"apply" : "ka 6/9/2018 11:54",
-		"buildButtonBarWith:" : "ka 6/9/2018 11:48",
+		"buildButtonBarWith:" : "jw 6/9/2018 12:12",
 		"buildCheckBoxSpecWith:" : "ct 5/31/2018 12:38",
 		"buildFontListWith:" : "jw 5/26/2018 12:11",
 		"buildPointSizeListWith:" : "jw 5/26/2018 11:37",
