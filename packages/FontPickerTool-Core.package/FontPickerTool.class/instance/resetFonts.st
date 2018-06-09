@@ -3,6 +3,11 @@ resetFonts
 
 	|defaultFont1 defaultFont2 defaultFont3 defaultFont4 defaultFont5 defaultFont6|
 	
+	[lastFont isEmpty]
+		whileFalse: [lastFont pop.
+					lastFontType pop].
+	self changed: #stackNotEmpty.
+	
 	defaultFont1 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 9 emphasized: 0.
 	defaultFont2 := StrikeFont familyName: 'BitstreamVeraSansMono' pointSize: 12 emphasized: 0.
 	defaultFont3 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 7 emphasized: 0.
@@ -23,8 +28,10 @@ resetFonts
 		setCodeFontTo: defaultFont4;
 		setBalloonHelpFontTo: defaultFont5;
 		setButtonFontTo: defaultFont5.
-		
 	
+	
+	
+		
 	
 	
 		
