@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jw 6/4/2018 15:47",
+		"setUp" : "NvD 6/11/2018 14:17",
 		"tearDown" : "jw 6/4/2018 15:48",
 		"testFontPickerToolExist" : "jw 6/4/2018 15:49",
 		"testReset" : "jw 6/4/2018 16:03",
