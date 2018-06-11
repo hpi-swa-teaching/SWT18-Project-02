@@ -5,4 +5,6 @@
 		"setUp" : "jw 6/4/2018 15:47",
 		"tearDown" : "jw 6/4/2018 15:48",
 		"testFontPickerToolExist" : "jw 6/4/2018 15:49",
-		"testReset" : "jw 6/4/2018 16:03" } }
+		"testReset" : "jw 6/4/2018 16:03",
+		"testStackEmptyAtBeginning" : "jw 6/11/2018 11:12",
+		"testStackNotEmpty" : "jw 6/11/2018 13:40" } }
