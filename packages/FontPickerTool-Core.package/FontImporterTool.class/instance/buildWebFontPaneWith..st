@@ -7,8 +7,7 @@ buildWebFontPaneWith: builder
 		children: {
 			builder pluggableTextSpec new
 				model: self;
-				readOnly: false;
-				indicateUnacceptedChanges: false;
+				setText: #searchString:;
 				font: self filenameFont;
 				frame: (LayoutFrame 
 					fractions: (0@0 corner: 1@0)
@@ -26,12 +25,12 @@ buildWebFontPaneWith: builder
 
 			builder pluggableTextSpec new
 				model: self;
-				getText: #webFontResultsText;
+				getText: #webFontResultText;
 				askBeforeDiscardingEdits: false;
 				indicateUnacceptedChanges: false;
 				softLineWrap: false;
 				frame: (LayoutFrame 
 					fractions: (0@0.2 corner: 1@1));
-				yourself			
+				yourself		
 		};
 		yourself

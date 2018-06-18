@@ -11,7 +11,9 @@
 		"emphasis",
 		"currentSelection",
 		"currentParent",
-		"warningSeen" ],
+		"warningSeen",
+		"webFontResultText",
+		"searchString" ],
 	"name" : "FontImporterTool",
 	"pools" : [
 		 ],

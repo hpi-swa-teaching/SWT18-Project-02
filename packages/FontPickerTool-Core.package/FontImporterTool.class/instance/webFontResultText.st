@@ -1,0 +1,4 @@
+accessing
+webFontResultText 
+
+	^ webFontResultText
