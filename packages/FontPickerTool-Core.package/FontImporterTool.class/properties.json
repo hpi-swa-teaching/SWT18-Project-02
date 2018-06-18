@@ -13,7 +13,8 @@
 		"currentParent",
 		"warningSeen",
 		"webFontResultText",
-		"searchString" ],
+		"searchString",
+		"model" ],
 	"name" : "FontImporterTool",
 	"pools" : [
 		 ],

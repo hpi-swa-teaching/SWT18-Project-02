@@ -6,9 +6,12 @@ buildWebFontPaneWith: builder
 		wantsResizeHandles: true;
 		children: {
 			builder pluggableTextSpec new
-				model: self;
-				setText: #searchString:;
+				model: searchString;
+				getText: #contents; 
+				setText: #contents:;
 				font: self filenameFont;
+				help: 'Type here, then hit the button.' translated;
+				softLineWrap: true;
 				frame: (LayoutFrame 
 					fractions: (0@0 corner: 1@0)
 					offsets: (0@0 corner: 0@ self filenameHeight));
