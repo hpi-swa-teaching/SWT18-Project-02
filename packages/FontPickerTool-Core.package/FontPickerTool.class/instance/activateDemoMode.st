@@ -1,4 +1,5 @@
 as yet unclassified
 activateDemoMode
 
-	Preferences setDemoFonts
+	Preferences setDemoFonts.
+	self changed: #contents

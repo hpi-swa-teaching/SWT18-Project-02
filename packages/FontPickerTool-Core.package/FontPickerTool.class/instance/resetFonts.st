@@ -28,6 +28,8 @@ resetFonts
 		setCodeFontTo: defaultFont4;
 		setBalloonHelpFontTo: defaultFont5;
 		setButtonFontTo: defaultFont5.
+		
+	self changed: #contents
 	
 	
 	
