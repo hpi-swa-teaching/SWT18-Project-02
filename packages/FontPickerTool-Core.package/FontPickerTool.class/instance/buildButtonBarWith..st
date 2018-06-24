@@ -41,8 +41,7 @@ buildButtonBarWith: builder
 		model: self;
 		label: 'Demo mode' translated;
 		help: 'Change to demo mode (everything is bigger)' translated;
-		action: #activateDemoMode;
-		yourself.
+		action: #activateDemoMode.
 	panelSpec children addLast: buttonSpec.
 		
 	buttonSpec := builder pluggableButtonSpec new.

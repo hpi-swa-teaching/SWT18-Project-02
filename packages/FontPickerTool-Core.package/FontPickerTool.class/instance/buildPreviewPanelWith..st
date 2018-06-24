@@ -6,6 +6,6 @@ buildPreviewPanelWith: builder
 	textSpec 
 		name: #preview;
 		model: self;
-		getText: #contents;
-		softLineWrap: false.
+		getText: #contents.
+		"softLineWrap: false."
 	^textSpec
