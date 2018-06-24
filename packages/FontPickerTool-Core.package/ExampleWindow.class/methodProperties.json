@@ -2,5 +2,9 @@
 	"class" : {
 		"open" : "ct 5/31/2018 13:05" },
 	"instance" : {
-		"buildWith:" : "ma 6/22/2018 16:10",
-		"listFontWords" : "ma 6/22/2018 15:01" } }
+		"ballonHelpFontExplanation" : "ma 6/24/2018 13:56",
+		"buildWith:" : "ma 6/24/2018 14:08",
+		"codeFontExplanation" : "ma 6/24/2018 14:07",
+		"lessUsedFontsExplanation" : "ma 6/24/2018 14:04",
+		"listFontExplanation" : "ma 6/24/2018 14:05",
+		"listFontWords" : "ma 6/24/2018 14:14" } }
