@@ -6,7 +6,7 @@ buildWith: builder
 	windowSpec := builder pluggableWindowSpec new.
 	windowSpec
 		model: self;
-		label: 'This is the WINDOW TITLE FONT';
+		label: #windowTitleFontExplanation;
 		extent: 520@500;
 		children: OrderedCollection new.
 	
@@ -14,7 +14,7 @@ buildWith: builder
 	buttonSpec
 		model: self;
 		frame: (0@0.5 corner: 0.5@0.6);
-		label: 'This is the BUTTON FONT' translated;
+		label: #buttonFontExplanation;
 		help: 'This is the BALLOON HELP FONT' translated;
 		yourself.
 	windowSpec children add: buttonSpec.
@@ -23,7 +23,7 @@ buildWith: builder
 	buttonSpec
 		model: self;
 		frame: (0.5@0.5 corner: 1@0.6);
-		label: #ballonHelpFontExplanation;
+		label: #ballonHelpFontHint;
 		help: 'This is the BALLOON HELP FONT' translated;
 		yourself.
 	windowSpec children add: buttonSpec.

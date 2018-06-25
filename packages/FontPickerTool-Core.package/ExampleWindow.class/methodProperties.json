@@ -2,9 +2,11 @@
 	"class" : {
 		"open" : "ct 5/31/2018 13:05" },
 	"instance" : {
-		"ballonHelpFontExplanation" : "ma 6/24/2018 13:56",
-		"buildWith:" : "ma 6/24/2018 14:08",
+		"ballonHelpFontHint" : "ma 6/25/2018 17:08",
+		"buildWith:" : "ma 6/25/2018 17:15",
+		"buttonFontExplanation" : "ma 6/25/2018 17:07",
 		"codeFontExplanation" : "ma 6/24/2018 14:07",
-		"lessUsedFontsExplanation" : "ma 6/24/2018 14:04",
+		"lessUsedFontsExplanation" : "ma 6/25/2018 17:12",
 		"listFontExplanation" : "ma 6/24/2018 14:05",
-		"listFontWords" : "ma 6/24/2018 14:14" } }
+		"listFontWords" : "ma 6/24/2018 14:14",
+		"windowTitleFontExplanation" : "ma 6/25/2018 17:07" } }

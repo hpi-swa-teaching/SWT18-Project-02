@@ -1,4 +1,4 @@
 as yet unclassified
-ballonHelpFontExplanation
+ballonHelpFontHint
 
 	^ 'Hover this field to see the', String cr, 'BALLOON HELP FONT' translated
