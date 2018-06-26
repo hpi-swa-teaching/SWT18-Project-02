@@ -7,10 +7,9 @@ buildWebFontPaneWith: builder
 		children: {
 			builder pluggableTextSpec new
 				model: searchString;
-				getText: #contents; 
 				setText: #contents:;
 				font: self filenameFont;
-				help: 'Type here, then hit the button.' translated;
+				help: 'Enter search string here' translated;
 				softLineWrap: true;
 				frame: (LayoutFrame 
 					fractions: (0@0 corner: 1@0)
@@ -26,14 +25,22 @@ buildWebFontPaneWith: builder
 					offsets: (0@ self filenameHeight corner: 0@0));
 				yourself.
 
-			builder pluggableTextSpec new
+			builder pluggableListSpec new
 				model: self;
-				getText: #webFontResultText;
-				askBeforeDiscardingEdits: false;
-				indicateUnacceptedChanges: false;
-				softLineWrap: false;
+				list: #webFontResultArray;
+				getIndex: #selectedSearchIndex;
+				setIndex: #selectedSearchIndex:;
 				frame: (LayoutFrame 
-					fractions: (0@0.2 corner: 1@1));
-				yourself		
+					fractions: (0@0.2 corner: 1@0.8));
+				yourself	.
+					
+			 builder pluggableButtonSpec new
+				model: self;
+				label: 'Download now';
+				action: #download;
+				enabled: #hasResults;
+				frame: (LayoutFrame 
+					fractions: (0@0.8 corner: 1@1))
+				yourself.	
 		};
 		yourself

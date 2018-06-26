@@ -16,7 +16,10 @@ searchWebFont
 	result_indices := result_indices removeAllSuchThat: [:r | r isNil].
 	result_indices do: [:r | family_names add: (result at: r)].
 	family_names do: [:aFamilyName | test add: (aFamilyName copyFrom: 15 to: aFamilyName size - 2)].
+	self webFontResultArray: test.
+	self changed: #hasResults.
 	result_string := test inject: '' into: [:totalString :value | totalString , value , String cr].
 	self webFontResultText: result_string.
 	self changed: #webFontResultText.
+	self changed: #webFontResultArray.
 	response close

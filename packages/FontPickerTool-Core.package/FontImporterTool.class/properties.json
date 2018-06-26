@@ -14,7 +14,9 @@
 		"warningSeen",
 		"webFontResultText",
 		"searchString",
-		"model" ],
+		"model",
+		"webFontResultArray",
+		"selectedSearchIndex" ],
 	"name" : "FontImporterTool",
 	"pools" : [
 		 ],

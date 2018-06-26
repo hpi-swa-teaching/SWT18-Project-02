@@ -2,7 +2,8 @@ initialize
 initialize
 
 	super initialize.
-	searchString := ValueHolder new contents: 'Enter search string here'.
+	searchString := ValueHolder new.
 	searchString addDependent: self.
+	self webFontResultArray: OrderedCollection new.
 	
 	emphasis := 0.
