@@ -9,7 +9,6 @@ selectedFontTypeIndex: anIndex
 	selectedFontIndex := (self fontList indexOf: selectedFont familyName).
 	emphasis := selectedFont emphasis.
 	
-	Transcript show: selectedFontTypeIndex.
 	self changed: #selectedFontTypeIndex.
 	self changed: #selectedFontIndex.
 	self changed: #selectedFontStyleIndex.

@@ -30,13 +30,3 @@ resetFonts
 		setButtonFontTo: defaultFont5.
 		
 	self changed: #contents
-	
-	
-	
-		
-	
-	
-		
-		
-	
-	  
