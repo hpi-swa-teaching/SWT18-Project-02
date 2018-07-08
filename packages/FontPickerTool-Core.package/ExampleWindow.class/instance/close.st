@@ -1,5 +1,3 @@
 as yet unclassified
 close
-
-	self changed: #close
-	
+	self changed: #close.

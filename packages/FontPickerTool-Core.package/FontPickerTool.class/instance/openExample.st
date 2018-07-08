@@ -1,4 +1,5 @@
 as yet unclassified
 openExample
 
-	ExampleWindow open
+	self exampleWindow push: ExampleWindow new.
+	self exampleWindow top open 

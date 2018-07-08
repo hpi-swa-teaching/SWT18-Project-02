@@ -15,6 +15,7 @@ resetFonts
 	defaultFont5 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 7 emphasized: 0.
 	defaultFont6 := StrikeFont familyName: 'Bitmap DejaVu Sans' pointSize: 9 emphasized: 1.
 	 
+	Transcript show: 'jo'.
 	Preferences 
 		setSystemFontTo: defaultFont1;
 		setListFontTo: defaultFont1;
