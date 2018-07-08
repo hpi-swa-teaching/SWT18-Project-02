@@ -1,13 +1,11 @@
 actions
 download
 
-	| font_family_name font_variant_name response  font_names |
-	response := (WebClient httpGet: 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBng62DSYoqAbhmE-DyTvz-Ge9wUMHas38') content asString.
-	font_family_name := resultFontFamilyNames at: selectedSearchIndex.
-	font_variant_name := resultFontVariantNames at: selectedSearchIndex.
-	font_names := #() asOrderedCollection.
-
-	response regex: '{([^{}])*\"',font_family_name,'\"([^{}])*{([^{}])*}([^{}])' matchesDo: 
+	| font_family_name font_variant_name |
+	font_family_name := self resultFontFamilyNames at: self selectedSearchIndex.
+	font_variant_name := self resultFontVariantNames at: self selectedSearchIndex.
+	
+	self response regex: '{([^{}])*\"',font_family_name,'\"([^{}])*{([^{}])*}([^{}])' matchesDo: 
 		[:aFontFamilyJson | 
 		aFontFamilyJson regex: '\"files\"\: {([^{}])*}' matchesDo: 
 			[:aFontFamilyFilesJson | 
