@@ -3,4 +3,6 @@ createEtoy
 
 
 	self eToysMorphs push: Morph new openInWorld.
-	self eToysMorphs top openViewerForArgument
+	self eToysMorphs top openViewerForArgument.
+	
+	self changed: #stackNotEmpty

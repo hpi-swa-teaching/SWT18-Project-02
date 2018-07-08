@@ -29,10 +29,21 @@ buildWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
-		frame: (0@0.25 corner: 0.2@0.5);
+		frame: (0@0.25 corner: 0.2@0.375);
 		label: 'Create etoy';
 		help: 'This is the BALLOON HELP FONT' translated;
 		action: #createEtoy;
+		yourself.
+	windowSpec children add: buttonSpec.
+	
+	buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		frame: (0@0.375 corner: 0.2@0.5);
+		enabled: #stackNotEmpty;
+		label: 'Close etoys';
+		help: 'This is the BALLOON HELP FONT' translated;
+		action: #closeEtoysMorphs;
 		yourself.
 	windowSpec children add: buttonSpec.
 	

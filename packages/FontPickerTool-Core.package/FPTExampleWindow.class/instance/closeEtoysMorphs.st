@@ -3,4 +3,6 @@ closeEtoysMorphs
 
 	[eToysMorphs isEmpty] whileFalse: [
 		eToysMorphs top delete.
-		eToysMorphs pop]
+		eToysMorphs pop].
+	
+	self changed: #stackNotEmpty 
