@@ -1,4 +1,5 @@
 as yet unclassified
 openExample
 
-	exampleWindows push: FPTExampleWindow open
+	exampleWindows push: FPTExampleWindow new.
+	exampleWindows top open

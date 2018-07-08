@@ -1,7 +1,6 @@
 actions
 import
 	| megaSize filenames fonts |
-	self halt.
 	fonts := self currentSelection.
 	filenames := fonts allFilenames.
 	self halt.
