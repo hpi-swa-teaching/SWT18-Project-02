@@ -13,7 +13,7 @@ download
 			[:aFontFamilyFilesJson | 
 			aFontFamilyFilesJson regex: '\"',font_variant_name,'\"\: \"(.)*.ttf' matchesDo: 
 				[:aMatch |
-				FontImporterTool new importFontFamily: (TTCFontReader readTTFFrom: ((WebClient httpGet: (aMatch copyFrom: font_variant_name size+6 to: aMatch size)) content readStream binary))
+				self importFontFamily: (TTCFontReader readTTFFrom: ((WebClient httpGet: (aMatch copyFrom: font_variant_name size+6 to: aMatch size)) content readStream binary))
 				].
 			]
 		].

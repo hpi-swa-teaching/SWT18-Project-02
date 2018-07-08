@@ -36,7 +36,7 @@ buildWebFontPaneWith: builder
 					
 			 builder pluggableButtonSpec new
 				model: self;
-				label: 'Download now';
+				label: 'Download and import now';
 				action: #download;
 				enabled: #hasResults;
 				frame: (LayoutFrame 
