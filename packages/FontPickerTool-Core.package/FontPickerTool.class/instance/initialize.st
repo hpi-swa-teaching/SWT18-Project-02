@@ -4,5 +4,6 @@ initialize
 	getSelector := TextStyle defaultFont.
 	emphasis := 0.
 	self lastFontType: Stack new;
-		lastFont: Stack new.
+		lastFont: Stack new;
+		exampleWindows: Stack new.
 	

@@ -1,14 +1,14 @@
 {
-	"category" : "FontPickerTool-Core",
+	"category" : "FontPickerTool-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"eToysMorphs" ],
-	"name" : "FPTExampleWindow",
+		"exampleWindow" ],
+	"name" : "FPTExampleWindowTest",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "TestCase",
 	"type" : "normal" }

@@ -15,7 +15,8 @@
 		"getSelector",
 		"lastFontType",
 		"lastFont",
-		"exampleBuilder" ],
+		"exampleBuilder",
+		"exampleWindows" ],
 	"name" : "FontPickerTool",
 	"pools" : [
 		 ],
