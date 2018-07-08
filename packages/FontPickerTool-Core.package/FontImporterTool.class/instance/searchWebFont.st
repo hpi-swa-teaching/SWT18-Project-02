@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 searchWebFont
 
 	| result search_string font_names |
@@ -15,13 +15,13 @@ searchWebFont
 				[:aFontVariantJson |
 				(aFontVariantJson allRegexMatches: '\"(.)*\"') do:  
 					[:aFontVariantName |
-						result add: (aFontFamilyName copyFrom: 12 to: aFontFamilyName size-1), ' ', 						(aFontVariantName copyFrom: 2 to: aFontVariantName size-1) 
+						resultFontFamilyNames add: (aFontFamilyName copyFrom: 12 to: aFontFamilyName size-1). 
+						resultFontVariantNames add: (aFontVariantName copyFrom: 2 to: aFontVariantName size-1). 
+						result add: (resultFontFamilyNames last, ' ', 						resultFontVariantNames last)
 					] without: (aFontVariantJson allRegexMatches: '\"(.)*\"') first.
 				]
 			]
 		].
 	self webFontResultArray: result.
 	self changed: #hasResults.
-	self webFontResultText: (result inject: '' into: [:totalString :value | totalString , value , String cr]).
-	self changed: #webFontResultText.
 	self changed: #webFontResultArray.
