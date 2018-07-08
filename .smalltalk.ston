@@ -9,7 +9,7 @@ SmalltalkCISpec {
   ],
    #testing : {
     #coverage : {
-      #categories : ['Spreadsheet-Core']
+      #categories : ['FontPickerTool-Core']
     }
 }
 }
