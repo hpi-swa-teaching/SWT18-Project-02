@@ -16,7 +16,8 @@
 		"searchString",
 		"model",
 		"webFontResultArray",
-		"selectedSearchIndex" ],
+		"selectedSearchIndex",
+		"response" ],
 	"name" : "FontImporterTool",
 	"pools" : [
 		 ],
