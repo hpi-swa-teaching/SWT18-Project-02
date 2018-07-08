@@ -2,5 +2,5 @@ as yet unclassified
 closeExampleWindows
 
 	[exampleWindows isEmpty] whileFalse: [
-		exampleWindows top close.
+		exampleWindows top delete.
 		exampleWindows pop]
