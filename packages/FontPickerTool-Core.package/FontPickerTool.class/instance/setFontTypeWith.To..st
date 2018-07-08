@@ -12,4 +12,4 @@ setFontTypeWith: anIndex To: aFont
 	anIndex = 9 ifTrue: [Preferences setWindowTitleFontTo: aFont].
 	anIndex = 10 ifTrue: [Preferences setBalloonHelpFontTo: aFont].
 	anIndex = 11 ifTrue: [Preferences setCodeFontTo: aFont].
-	anIndex = 12 ifTrue: [self preferences setButtonFontTo: aFont].
+	anIndex = 12 ifTrue: [Preferences setButtonFontTo: aFont].

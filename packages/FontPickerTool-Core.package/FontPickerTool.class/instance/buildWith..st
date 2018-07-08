@@ -29,7 +29,7 @@ buildWith: builder
 		frame: (0.125@0.4 corner: 0.25@0.5);
 		label: 'Close all' translated;
 		help: 'Close all example windows' translated;
-		action: #closeExamples;
+		action: #closeExampleWindows;
 		yourself.
 	windowSpec children add: buttonSpec.
 	

@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "ExampleWindow",
+	"name" : "FPTExampleWindow",
 	"pools" : [
 		 ],
 	"super" : "Model",

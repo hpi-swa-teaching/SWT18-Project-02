@@ -1,5 +1,5 @@
 as yet unclassified
 openExample
 
-	self exampleWindow push: ExampleWindow new.
-	self exampleWindow top open 
+	exampleWindows push: FPTExampleWindow new.
+	exampleWindows top open
