@@ -4,10 +4,13 @@
 	"instance" : {
 		"setUp" : "NvD 6/11/2018 14:17",
 		"tearDown" : "jw 6/4/2018 15:48",
-		"testClose" : "jw 6/24/2018 16:17",
-		"testExampleWindowOpens" : "jw 6/24/2018 16:00",
+		"testAllFontTypesInList" : "jw 7/8/2018 11:46",
+		"testClose" : "jw 7/8/2018 11:31",
+		"testExampleWindowOpens" : "jw 7/8/2018 10:33",
+		"testFontListComplete" : "jw 7/8/2018 11:49",
 		"testFontPickerToolExist" : "jw 6/4/2018 15:49",
+		"testFontStyleListComplete" : "jw 7/8/2018 11:44",
 		"testIndexNotNil" : "jw 6/24/2018 15:58",
-		"testReset" : "jw 6/4/2018 16:03",
+		"testReset" : "jw 7/8/2018 10:30",
 		"testStackEmptyAtBeginning" : "jw 6/11/2018 11:12",
-		"testStackNotEmpty" : "jw 6/11/2018 13:40" } }
+		"testStackNotEmpty" : "jw 7/8/2018 11:12" } }

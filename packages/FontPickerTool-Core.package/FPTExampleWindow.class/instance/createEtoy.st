@@ -1,7 +1,6 @@
 as yet unclassified
 createEtoy
 
-	|aMorph|
 
-	aMorph := Morph new openInWorld.
-	aMorph openViewerForArgument
+	self eToysMorphs push: Morph new openInWorld.
+	self eToysMorphs top openViewerForArgument
