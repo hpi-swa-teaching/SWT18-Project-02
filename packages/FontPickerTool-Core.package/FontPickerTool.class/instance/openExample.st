@@ -1,5 +1,7 @@
 as yet unclassified
 openExample
 
-	exampleWindows push: FPTExampleWindow new.
-	exampleWindows top open
+	|aWindow|
+	aWindow := FPTExampleWindow new.
+	aWindow open.
+	exampleWindows add: aWindow

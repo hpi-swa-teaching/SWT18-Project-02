@@ -1,8 +1,8 @@
 as yet unclassified
 closeEtoysMorphs
 
-	[eToysMorphs isEmpty] whileFalse: [
-		eToysMorphs top delete.
-		eToysMorphs pop].
+	self eToysMorphs
+		collect: [:each | each delete];
+		removeAll.
 	
 	self changed: #stackNotEmpty 

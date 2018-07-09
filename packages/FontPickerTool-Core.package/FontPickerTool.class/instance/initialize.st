@@ -5,5 +5,5 @@ initialize
 	emphasis := 0.
 	self lastFontType: Stack new;
 		lastFont: Stack new;
-		exampleWindows: Stack new.
+		exampleWindows: Set new
 	

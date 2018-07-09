@@ -1,6 +1,6 @@
 as yet unclassified
 closeExampleWindows
-
-	[exampleWindows isEmpty] whileFalse: [
-		exampleWindows top close.
-		exampleWindows pop]
+	
+	self exampleWindows
+		collect: [:each | each close];
+		removeAll
