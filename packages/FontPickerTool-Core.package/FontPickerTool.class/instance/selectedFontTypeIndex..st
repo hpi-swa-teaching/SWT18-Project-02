@@ -1,7 +1,7 @@
 accessing
 selectedFontTypeIndex: anIndex
 
-	|selectedFont|
+	| selectedFont |
 	anIndex = 0 ifTrue: [^self].
 	selectedFontTypeIndex := anIndex.
 	selectedFont := self getStandardFontFromType: anIndex.
@@ -9,6 +9,7 @@ selectedFontTypeIndex: anIndex
 	selectedFontIndex := (self fontList indexOf: selectedFont familyName).
 	emphasis := selectedFont emphasis.
 	
+	Transcript show: selectedFontTypeIndex.
 	self changed: #selectedFontTypeIndex.
 	self changed: #selectedFontIndex.
 	self changed: #selectedFontStyleIndex.
@@ -17,4 +18,4 @@ selectedFontTypeIndex: anIndex
 	pointSize :=  selectedFont pointSize.
 	
 	self changed: #selectedPointSizeIndex.
-	self changed: #contents.
+	self changed: #contents

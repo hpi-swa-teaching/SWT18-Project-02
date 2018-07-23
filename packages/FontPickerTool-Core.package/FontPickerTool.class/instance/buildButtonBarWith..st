@@ -1,7 +1,7 @@
-as yet unclassified
+toolbuilder
 buildButtonBarWith: builder
 
-	|panelSpec buttonSpec|
+	| panelSpec buttonSpec |
 	panelSpec := builder pluggablePanelSpec new.
 	panelSpec
 		layout: #vertical;

@@ -1,8 +1,7 @@
 as yet unclassified
 resetFonts
 
-	|defaultFont1 defaultFont2 defaultFont3 defaultFont4 defaultFont5 defaultFont6|
-	
+	| defaultFont1 defaultFont2 defaultFont3 defaultFont4 defaultFont5 defaultFont6 |
 	[lastFont isEmpty]
 		whileFalse: [lastFont pop.
 					lastFontType pop].
@@ -30,3 +29,13 @@ resetFonts
 		setButtonFontTo: defaultFont5.
 		
 	self changed: #contents
+	
+	
+	
+		
+	
+	
+		
+		
+	
+	  

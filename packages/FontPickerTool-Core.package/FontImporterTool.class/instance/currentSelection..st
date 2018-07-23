@@ -7,5 +7,3 @@ currentSelection: anObject
 	self changed: #previewText.
 	self changed: #filename.
 	self changed: #copyright.
-	self changed: #isFontSelected.
-	

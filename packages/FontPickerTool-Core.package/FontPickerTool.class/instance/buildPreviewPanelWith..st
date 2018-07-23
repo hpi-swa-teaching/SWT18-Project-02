@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildPreviewPanelWith: builder
 	"Build the preview panel"
 	| textSpec |

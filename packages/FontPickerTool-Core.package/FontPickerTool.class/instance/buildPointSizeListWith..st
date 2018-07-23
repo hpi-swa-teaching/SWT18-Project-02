@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildPointSizeListWith: builder
 	"Build the font choosers list of point sizes"
 	| listSpec |

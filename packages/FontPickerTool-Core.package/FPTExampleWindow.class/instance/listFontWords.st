@@ -1,5 +1,5 @@
 as yet unclassified
-listFontExplanation
+listFontWords
 
 	| words |
 	words := Array new: 4.

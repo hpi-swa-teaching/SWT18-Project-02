@@ -1,7 +1,7 @@
-as yet unclassified
+toolbuilder
 buildFontListWith: builder
 
-	|fontListSpec|
+	| fontListSpec |
 	fontListSpec := builder pluggableListSpec new.
 	fontListSpec
 		model: self;
@@ -10,5 +10,4 @@ buildFontListWith: builder
 		list: #fontList;
 		getIndex: #selectedFontIndex; 
 		setIndex: #selectedFontIndex:.
-		
 	^fontListSpec

@@ -1,5 +1,6 @@
 accessing
 selectedFontIndex
+
 	| font textStyleName family |
 	selectedFontIndex ifNotNil: [^selectedFontIndex].
 	selectedFontIndex := 0.
@@ -10,8 +11,7 @@ selectedFontIndex
 		emphasis := font emphasis.
 		pointSize := font pointSize.
 		textStyleName := font textStyleName.
-		family := self fontList detect:[:f | f = textStyleName] ifNone:[].
-	].
+		family := self fontList detect:[:f | f = textStyleName] ifNone:[].].
 	selectedFontIndex := self fontList indexOf: family.
 	self selectedFontIndex: selectedFontIndex.
 	^selectedFontIndex

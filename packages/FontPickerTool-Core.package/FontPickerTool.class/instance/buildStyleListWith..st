@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildStyleListWith: builder
 	"Build the font choosers list of font styles"
 	| listSpec |

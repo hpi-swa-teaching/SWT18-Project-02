@@ -1,7 +1,7 @@
-as yet unclassified
+toolbuilder
 buildWith: builder
 
-	|windowSpec panelSpec fontListSpec checkBoxSpec styleListSpec sizeListSpec previewPanelSpec buttonSpec|
+	| windowSpec panelSpec fontListSpec checkBoxSpec styleListSpec sizeListSpec previewPanelSpec buttonSpec |
 	windowSpec := builder pluggableWindowSpec new.
 	windowSpec
 		model: self;
@@ -16,20 +16,10 @@ buildWith: builder
 	buttonSpec := builder pluggableButtonSpec new.
 	buttonSpec
 		model: self;
-		frame: (0@0.4 corner: 0.125@0.5);
+		frame: (0@0.4 corner: 0.25@0.5);
 		label: 'Example' translated;
 		help: 'Open example window' translated;
 		action: #openExample;
-		yourself.
-	windowSpec children add: buttonSpec.
-	
-	buttonSpec := builder pluggableButtonSpec new.
-	buttonSpec
-		model: self;
-		frame: (0.125@0.4 corner: 0.25@0.5);
-		label: 'Close all' translated;
-		help: 'Close all example windows' translated;
-		action: #closeExampleWindows;
 		yourself.
 	windowSpec children add: buttonSpec.
 	
@@ -55,5 +45,4 @@ buildWith: builder
 		frame: (0@0.5 corner: 0.75@1).
 	windowSpec children add: previewPanelSpec.
 	
-			
 	^ builder build: windowSpec

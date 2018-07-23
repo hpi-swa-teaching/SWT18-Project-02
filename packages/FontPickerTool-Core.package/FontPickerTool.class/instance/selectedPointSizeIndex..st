@@ -5,4 +5,4 @@ selectedPointSizeIndex: anIndex
 	pointSize := (self pointSizeList at: anIndex) withBlanksTrimmed asNumber.
 	self changed: #selectedPointSizeIndex.
 	self changed: #pointSizeList.
-	self changed: #contents.
+	self changed: #contents

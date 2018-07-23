@@ -1,7 +1,7 @@
-as yet unclassified
+toolbuilder
 buildCheckBoxSpecWith: builder
 
-	|checkBoxSpec|
+	| checkBoxSpec |
 	checkBoxSpec := builder pluggableMultiSelectionListSpec new.
 	checkBoxSpec
 		model: self;
@@ -10,6 +10,4 @@ buildCheckBoxSpecWith: builder
 		list: #fontTypesList;
 		getIndex: #selectedFontTypeIndex;
 		setIndex: #selectedFontTypeIndex:.
-		
-		
 	^checkBoxSpec

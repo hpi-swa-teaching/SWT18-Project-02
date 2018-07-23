@@ -1,4 +1,6 @@
 as yet unclassified
 selectedTextStyle
 
-	^TextStyle named: (self selectedFontFamily ifNil:[^TextStyle default])
+	Transcript show: '1 '.
+
+	^TextStyle named: (self selectedFontFamily ifNil:[Transcript show: 'here'. ^TextStyle default.])
