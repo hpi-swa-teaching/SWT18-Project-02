@@ -1,84 +1,17 @@
-as yet unclassified
+toolbuilder
 buildWith: builder
 
-	|windowSpec buttonSpec codeSpec listSpec explainSpec|
+	|windowSpec|
 	
-	windowSpec := builder pluggableWindowSpec new.
+	windowSpec := self buildWindowWith: builder specs: {
+		(0@0 corner: 0.2@0.25) -> [self buildListFontExplanationWith: builder].
+		(0.2@0 corner: 1@0.25) -> [self buildCodeFontExplanationWith: builder].
+		(0@0.25 corner: 0.2@0.5) -> [self buildEToyButtonBarWith: builder].
+		(0.2@0.25 corner: 1@0.5) -> [self buildEToysFontsExplanationWith: builder].
+		(0@0.5 corner: 1@0.6) -> [self buildButtonBarWith: builder].
+		(0@0.6 corner: 1@1) -> [self buildLessUsedFontsExplanationWith: builder]}.
 	windowSpec
-		model: self;
 		label: #windowTitleFontExplanation;
-		extent: 520@500;
-		children: OrderedCollection new.
-		
-	listSpec := builder pluggableListSpec new.
-	listSpec
-		model: self;
-		frame: (0@0 corner: 0.2@0.25);
-		name: #listFontExplanation;
-		list: #listFontExplanation.
-	windowSpec children add: listSpec.
-	
-	codeSpec := builder pluggableCodePaneSpec new.
-	codeSpec
-		model: self;
-		frame: (0.2@0 corner: 1@0.25);
-		getText: #codeFontExplanation;
-		yourself.
-	windowSpec children add: codeSpec.
-	
-	buttonSpec := builder pluggableButtonSpec new.
-	buttonSpec
-		model: self;
-		frame: (0@0.25 corner: 0.2@0.375);
-		label: 'Create etoy';
-		help: 'This is the BALLOON HELP FONT' translated;
-		action: #createEtoy;
-		yourself.
-	windowSpec children add: buttonSpec.
-	
-	buttonSpec := builder pluggableButtonSpec new.
-	buttonSpec
-		model: self;
-		frame: (0@0.375 corner: 0.2@0.5);
-		enabled: #setNotEmpty;
-		label: 'Close etoys';
-		help: 'This is the BALLOON HELP FONT' translated;
-		action: #closeEtoysMorphs;
-		yourself.
-	windowSpec children add: buttonSpec.
-	
-	explainSpec := builder pluggableTextSpec new.
-	explainSpec
-		model: self;
-		frame: (0.2@0.25 corner: 1@0.5);
- 		getText: #etoysFontsExplanation;
-		yourself.
-	windowSpec children add: explainSpec.
-	
-	buttonSpec := builder pluggableButtonSpec new.
-	buttonSpec
-		model: self;
-		frame: (0@0.5 corner: 0.5@0.6);
-		label: #buttonFontExplanation;
-		help: 'This is the BALLOON HELP FONT' translated;
-		yourself.
-	windowSpec children add: buttonSpec.
-	
-	buttonSpec := builder pluggableButtonSpec new.
-	buttonSpec
-		model: self;
-		frame: (0.5@0.5 corner: 1@0.6);
-		label: #ballonHelpFontHint;
-		help: 'This is the BALLOON HELP FONT' translated;
-		yourself.
-	windowSpec children add: buttonSpec.
-	
-	explainSpec := builder pluggableTextSpec new.
-	explainSpec
-		model: self;
-		frame: (0@0.6 corner: 1@1);
- 		getText: #lessUsedFontsExplanation;
-		yourself.
-	windowSpec children add: explainSpec.
+		extent: self initialExtent.
 	
 	^builder build: windowSpec.

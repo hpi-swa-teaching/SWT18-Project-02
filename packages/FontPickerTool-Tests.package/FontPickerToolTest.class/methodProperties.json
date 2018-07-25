@@ -4,6 +4,7 @@
 	"instance" : {
 		"setUp" : "NvD 6/11/2018 14:17",
 		"tearDown" : "jw 6/4/2018 15:48",
+		"testAllFontStylesInList" : "jw 7/25/2018 18:28",
 		"testAllFontTypesInList" : "jw 7/8/2018 11:46",
 		"testClose" : "jw 7/8/2018 15:01",
 		"testExampleWindowOpens" : "jw 7/8/2018 10:33",

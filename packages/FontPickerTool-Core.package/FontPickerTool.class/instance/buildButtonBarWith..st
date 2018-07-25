@@ -1,11 +1,10 @@
-as yet unclassified
+toolbuilder
 buildButtonBarWith: builder
 
 	|panelSpec buttonSpec|
 	panelSpec := builder pluggablePanelSpec new.
 	panelSpec
 		layout: #vertical;
-		frame: (0.75@0.5 corner: 1@1);
 		children: OrderedCollection new.
 			
 	buttonSpec := builder pluggableButtonSpec new.
@@ -50,7 +49,8 @@ buildButtonBarWith: builder
 		model: self;
 		label: 'Demo mode' translated;
 		help: 'Change to demo mode (everything is bigger)' translated;
-		action: #activateDemoMode.
+		action: #activateDemoMode;
+		yourself.
 	panelSpec children addLast: buttonSpec.
 		
 	buttonSpec := builder pluggableButtonSpec new.

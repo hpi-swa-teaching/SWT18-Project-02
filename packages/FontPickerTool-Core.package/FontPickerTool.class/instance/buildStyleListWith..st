@@ -1,6 +1,6 @@
 toolbuilder
 buildStyleListWith: builder
-	"Build the font choosers list of font styles"
+
 	| listSpec |
 	listSpec := builder pluggableListSpec new.
 	listSpec 

@@ -11,4 +11,4 @@ printOn: aStream
 	self allFilenames
 		do: [:filename | aStream nextPutAll: filename]
 		separatedBy: [aStream nextPut: $,; nextPut: $ ].
-	aStream nextPut: $).
+	aStream nextPut: $)
