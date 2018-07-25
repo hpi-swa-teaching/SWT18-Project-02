@@ -14,4 +14,4 @@ importFontFamily: readFonts
 				ifFalse: [
 					Transcript show: 'Cannot import unknown style ', rf subfamilyName, ' from Font family ', f name]]. 
 		f].
-	^ TTCFont reorganizeForNewFontArray: array name: array first name asSymbol.
+	^ TTCFont reorganizeForNewFontArray: array name: array first name asSymbol

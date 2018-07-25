@@ -17,4 +17,4 @@ This warning is only shown once per session.' ) trueChoice: 'Proceed' falseChoic
 		readFonts isCollection
 					ifFalse: [TTCFont newTextStyleFromTT: readFonts]
 					ifTrue: [self importFontFamily: readFonts]].
-	self allFonts: nil. "force redraw"
+	self allFonts: nil "force redraw"

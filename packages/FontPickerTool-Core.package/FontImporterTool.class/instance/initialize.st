@@ -8,4 +8,4 @@ initialize
 	resultFontVariantNames := OrderedCollection new.
 	webFontResultArray := OrderedCollection new.
 	
-	emphasis := 0.
+	emphasis := 0

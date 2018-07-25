@@ -3,7 +3,6 @@ import
 	| megaSize filenames fonts |
 	fonts := self currentSelection.
 	filenames := fonts allFilenames.
-	self halt.
 	megaSize := ((filenames inject: 0 into: [ :sum :fn |
 		sum + (FileStream readOnlyFileNamed: fn do: [:file | file size])]) / (1024 * 1024)) asFloat.
 	(UIManager default confirm: (
@@ -22,4 +21,4 @@ Proceed?'
 				readFonts isCollection
 					ifFalse: [TTCFont newTextStyleFromTT: readFonts]
 					ifTrue: [self importFontFamily: readFonts]]].
-	self allFonts: nil. "force redraw"
+	self allFonts: nil "force redraw"

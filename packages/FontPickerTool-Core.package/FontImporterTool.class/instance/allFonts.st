@@ -21,6 +21,6 @@ allFonts
 							fontDesc addChild: subfontDesc]]]].
 		allFonts := fonts values sorted.
 		allFonts do: [:fontDesc | fontDesc normalize].
-		allFonts].
+		allFonts]
 
 		

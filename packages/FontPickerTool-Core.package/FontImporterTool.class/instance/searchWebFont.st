@@ -2,7 +2,7 @@ actions
 searchWebFont
 
 	| result search_string font_names |
-	self response: (WebClient httpGet: 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBng62DSYoqAbhmE-DyTvz-Ge9wUMHas38') content asString.
+	self response: (WebClient httpGet: 'https://www.googleapis.com/webfonts/v1/webfonts?key=',self googleWebFontApiKey) content asString.
 	self searchString changed: #acceptChanges.
 	search_string := self searchString contents.
 	result := #() asOrderedCollection.
@@ -24,4 +24,4 @@ searchWebFont
 		].
 	self webFontResultArray: result.
 	self changed: #hasResults.
-	self changed: #webFontResultArray.
+	self changed: #webFontResultArray

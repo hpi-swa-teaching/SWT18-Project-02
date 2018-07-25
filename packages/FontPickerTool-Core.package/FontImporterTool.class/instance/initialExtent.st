@@ -1,4 +1,4 @@
 initialize
 initialExtent
 
-	^ 800@400.
+	^ 800@400
