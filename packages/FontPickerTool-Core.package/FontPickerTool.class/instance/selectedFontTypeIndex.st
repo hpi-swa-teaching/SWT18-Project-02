@@ -1,6 +1,5 @@
 accessing
 selectedFontTypeIndex
 
-	selectedFontTypeIndex ifNotNil: [^selectedFontTypeIndex].
-	selectedFontTypeIndex := 1.
+	selectedFontTypeIndex ifNil: [^1].
 	^selectedFontTypeIndex

@@ -4,14 +4,13 @@ selectedFontIndex
 	| font textStyleName family |
 	selectedFontIndex ifNotNil: [^selectedFontIndex].
 	selectedFontIndex := 0.
-	font := (getSelector isSymbol and:[target notNil])
-		ifTrue:[target perform: getSelector]
-		ifFalse:[getSelector].
+	font := (self getSelector isSymbol and:[self target notNil])
+		ifTrue:[self target perform: self getSelector]
+		ifFalse:[self getSelector].
 	font ifNotNil:[
-		emphasis := font emphasis.
-		pointSize := font pointSize.
+		self emphasis: font emphasis;
+			pointSize: font pointSize.
 		textStyleName := font textStyleName.
-		family := self fontList detect:[:f | f = textStyleName] ifNone:[].].
-	selectedFontIndex := self fontList indexOf: family.
-	self selectedFontIndex: selectedFontIndex.
+		family := self fontList detect:[:f | f = textStyleName] ifNone:[]].
+	self selectedFontIndex: (self fontList indexOf: family).
 	^selectedFontIndex

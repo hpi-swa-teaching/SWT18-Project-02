@@ -1,5 +1,5 @@
 toolbuilder
-buildCheckBoxSpecWith: builder
+buildFontTypesListWith: builder
 
 	| checkBoxSpec |
 	checkBoxSpec := builder pluggableMultiSelectionListSpec new.

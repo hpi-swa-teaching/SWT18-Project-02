@@ -9,6 +9,5 @@ createEtoy
 		
 	self addDependent: aMorph.
 	self eToysMorphs add: aMorph.
-
 	
-	self changed: #stackNotEmpty
+	self changed: #setNotEmpty

@@ -2,7 +2,7 @@ accessing
 selectedPointSizeIndex: anIndex
 
 	anIndex = 0 ifTrue: [^self].
-	pointSize := (self pointSizeList at: anIndex) withBlanksTrimmed asNumber.
-	self changed: #selectedPointSizeIndex.
-	self changed: #pointSizeList.
-	self changed: #contents
+	self pointSize: (self pointSizeList at: anIndex) withBlanksTrimmed asNumber;
+		changed: #selectedPointSizeIndex;
+		changed: #pointSizeList;
+		changed: #contents

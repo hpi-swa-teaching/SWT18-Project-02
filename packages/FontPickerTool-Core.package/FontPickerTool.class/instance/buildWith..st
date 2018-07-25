@@ -9,7 +9,7 @@ buildWith: builder
 		extent: 500@500;
 		children: OrderedCollection new.
 	
-	checkBoxSpec := self buildCheckBoxSpecWith: builder.
+	checkBoxSpec := self buildFontTypesListWith: builder.
 	windowSpec children add: checkBoxSpec.
 	
 	buttonSpec := builder pluggableButtonSpec new.

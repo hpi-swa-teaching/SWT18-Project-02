@@ -1,4 +1,4 @@
 accessing
 pointSize
 
-	^pointSize ifNil: [pointSize := 10.0]
+	^pointSize ifNil: [self pointSize: self standardPointSize]

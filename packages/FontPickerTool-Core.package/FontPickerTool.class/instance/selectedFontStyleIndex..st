@@ -2,6 +2,6 @@ accessing
 selectedFontStyleIndex: anIndex
 
 	anIndex = 0 ifTrue: [^self].
-	emphasis := anIndex - 1.
-	self changed: #selectedFontStyleIndex.
-	self changed: #contents
+	self emphasis: anIndex - 1;
+		changed: #selectedFontStyleIndex;
+		changed: #contents

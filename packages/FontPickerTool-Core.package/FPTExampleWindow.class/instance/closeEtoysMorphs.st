@@ -5,4 +5,4 @@ closeEtoysMorphs
 		collect: [:each | each delete];
 		removeAll.
 	
-	self changed: #stackNotEmpty 
+	self changed: #setNotEmpty 

@@ -1,4 +1,4 @@
 as yet unclassified
 ballonHelpFontHint
 
-	^ 'Hover this field to see the', String cr, 'BALLOON HELP FONT' translated
+	^ 'Hover to see the BALLOON HELP FONT' translated

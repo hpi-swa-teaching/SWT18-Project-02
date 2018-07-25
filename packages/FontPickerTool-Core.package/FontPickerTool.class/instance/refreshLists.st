@@ -1,6 +1,6 @@
 as yet unclassified
 refreshLists
 
-	fontList  := nil.
-	self changed: #fontList.
-	self changed: #selectedFontIndex
+	self fontList: nil;
+		changed: #fontList;
+		changed: #selectedFontIndex

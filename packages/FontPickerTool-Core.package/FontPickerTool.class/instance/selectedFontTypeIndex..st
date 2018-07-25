@@ -6,15 +6,12 @@ selectedFontTypeIndex: anIndex
 	selectedFontTypeIndex := anIndex.
 	selectedFont := self getStandardFontFromType: anIndex.
 	
-	selectedFontIndex := (self fontList indexOf: selectedFont familyName).
-	emphasis := selectedFont emphasis.
-	
-	self changed: #selectedFontTypeIndex.
-	self changed: #selectedFontIndex.
-	self changed: #selectedFontStyleIndex.
-	self changed: #pointSizeList.
-	
-	pointSize :=  selectedFont pointSize.
-	
-	self changed: #selectedPointSizeIndex.
-	self changed: #contents
+	self selectedFontIndex: (self fontList indexOf: selectedFont familyName);
+		emphasis: selectedFont emphasis;
+		changed: #selectedFontTypeIndex;
+		changed: #selectedFontIndex;
+		changed: #selectedFontStyleIndex;
+		changed: #pointSizeList;
+		pointSize: selectedFont pointSize;
+		changed: #selectedPointSizeIndex;
+		changed: #contents

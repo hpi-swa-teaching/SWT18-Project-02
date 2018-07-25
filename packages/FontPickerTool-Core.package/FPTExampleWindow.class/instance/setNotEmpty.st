@@ -1,4 +1,4 @@
 as yet unclassified
-stackNotEmpty 
+setNotEmpty 
 
 	^eToysMorphs isEmpty not

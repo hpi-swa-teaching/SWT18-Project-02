@@ -40,7 +40,7 @@ buildWith: builder
 	buttonSpec
 		model: self;
 		frame: (0@0.375 corner: 0.2@0.5);
-		enabled: #stackNotEmpty;
+		enabled: #setNotEmpty;
 		label: 'Close etoys';
 		help: 'This is the BALLOON HELP FONT' translated;
 		action: #closeEtoysMorphs;

@@ -2,5 +2,5 @@ accessing
 pointSize: aNumber
 
 	pointSize := aNumber.
-	self changed: #pointSize.
-	self changed: #contents
+	self changed: #pointSize;
+		changed: #contents

@@ -1,9 +1,8 @@
 as yet unclassified
 apply
 
-	self pushToStacks.	
-	self setFontTypeWith: selectedFontTypeIndex To: (StrikeFont familyName: (fontList at: selectedFontIndex) pointSize: pointSize emphasized: emphasis).
-	
-	self changed: #stackNotEmpty;
+	self pushToStacks;
+		setFontTypeWith: selectedFontTypeIndex To: (StrikeFont familyName: (fontList at: selectedFontIndex) pointSize: pointSize emphasized: emphasis);
+		changed: #stackNotEmpty;
 		changed: #contents
  
