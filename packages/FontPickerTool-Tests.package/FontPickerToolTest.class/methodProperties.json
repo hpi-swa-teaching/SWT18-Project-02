@@ -2,14 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "NvD 6/11/2018 14:17",
+		"setUp" : "jw 7/25/2018 21:02",
 		"tearDown" : "jw 6/4/2018 15:48",
 		"testAllFontStylesInList" : "jw 7/25/2018 18:28",
 		"testAllFontTypesInList" : "jw 7/8/2018 11:46",
 		"testClose" : "jw 7/8/2018 15:01",
-		"testExampleWindowOpens" : "jw 7/8/2018 10:33",
+		"testExampleWindowOpens" : "jw 7/25/2018 21:00",
 		"testFontListComplete" : "jw 7/8/2018 11:49",
-		"testFontPickerToolExist" : "jw 6/4/2018 15:49",
+		"testFontPickerToolExist" : "jw 7/25/2018 20:57",
+		"testFontPickerToolOpen" : "jw 7/25/2018 21:16",
 		"testFontStyleListComplete" : "jw 7/8/2018 11:44",
 		"testIndexNotNil" : "jw 6/24/2018 15:58",
 		"testReset" : "jw 7/8/2018 10:30",
