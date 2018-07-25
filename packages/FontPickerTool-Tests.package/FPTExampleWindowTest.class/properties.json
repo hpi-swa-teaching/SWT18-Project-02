@@ -1,0 +1,14 @@
+{
+	"category" : "FontPickerTool-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"exampleWindow" ],
+	"name" : "FPTExampleWindowTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

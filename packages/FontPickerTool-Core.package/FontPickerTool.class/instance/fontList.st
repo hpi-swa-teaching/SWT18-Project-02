@@ -1,4 +1,5 @@
-as yet unclassified
+nil
 fontList
+
 	"List of available font family names"
 	^fontList ifNil:[fontList := TextStyle knownTextStyles]

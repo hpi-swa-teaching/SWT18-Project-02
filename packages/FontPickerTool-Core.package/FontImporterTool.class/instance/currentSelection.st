@@ -1,4 +1,5 @@
 accessing
 currentSelection
-
-	^ currentSelection
+	
+	^currentSelection
+	

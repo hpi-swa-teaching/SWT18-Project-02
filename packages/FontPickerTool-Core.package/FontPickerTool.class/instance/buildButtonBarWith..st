@@ -1,7 +1,7 @@
-toolbuilder
+as yet unclassified
 buildButtonBarWith: builder
 
-	| panelSpec buttonSpec |
+	|panelSpec buttonSpec|
 	panelSpec := builder pluggablePanelSpec new.
 	panelSpec
 		layout: #vertical;
@@ -33,6 +33,15 @@ buildButtonBarWith: builder
 		label: 'Reset' translated;
 		help: 'Go back to the default font settings' translated;
 		action: #resetFonts;
+		yourself.
+	panelSpec children addLast: buttonSpec.
+	
+		buttonSpec := builder pluggableButtonSpec new.
+	buttonSpec
+		model: self;
+		label: 'Refresh' translated;
+		help: 'Refresh the font list' translated;
+		action: #refreshLists;
 		yourself.
 	panelSpec children addLast: buttonSpec.
 	

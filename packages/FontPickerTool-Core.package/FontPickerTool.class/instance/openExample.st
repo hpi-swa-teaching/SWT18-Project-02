@@ -1,4 +1,7 @@
 as yet unclassified
 openExample
 
-	FPTExampleWindow open
+	| aWindow |
+	aWindow := FPTExampleWindow new.
+	aWindow open.
+	exampleWindows add: aWindow

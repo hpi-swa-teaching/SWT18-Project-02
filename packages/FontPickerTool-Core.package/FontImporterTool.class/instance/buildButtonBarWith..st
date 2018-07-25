@@ -9,7 +9,8 @@ buildButtonBarWith: builder
 
 	buttonSpec := builder pluggableButtonSpec new
 			model: self;
-			label: 'Import' translated; 
+			label: 'Import' translated;
+			enabled: #isFontSelected;
 			help: 'Include the font data in the image and provide a TextStyle for the font';
 			action: #import;
 			yourself.

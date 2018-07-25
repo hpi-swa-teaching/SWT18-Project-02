@@ -12,4 +12,4 @@ getStandardFontFromType: aType
 	aType = 9 ifTrue: [^Preferences standardWindowTitleFont].
 	aType = 10 ifTrue: [^Preferences standardBalloonHelpFont].
 	aType = 11 ifTrue: [^Preferences standardCodeFont].
-	aType = 12 ifTrue: [^Preferences standardButtonFont].
+	aType = 12 ifTrue: [^Preferences standardButtonFont]
