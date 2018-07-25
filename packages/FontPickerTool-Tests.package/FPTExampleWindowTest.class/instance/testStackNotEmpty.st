@@ -1,4 +1,4 @@
 as yet unclassified
 testStackNotEmpty
 
-	self assert: exampleWindow stackNotEmpty equals: exampleWindow eToysMorphs isEmpty not
+	self assert: exampleWindow setNotEmpty equals: exampleWindow eToysMorphs isEmpty not
